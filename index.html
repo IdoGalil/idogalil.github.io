@@ -30,11 +30,12 @@
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:tok@campus.technion.ac.il">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
+                  <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                  <a href="https://scholar.google.com/citations?user=QAdwficAAAAJ&hl=en&oi=ao">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/michael_toker">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/tokeron">Github</a>
+                  <a href="https://www.linkedin.com/in/mnlp/">Linkedin</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -47,7 +48,8 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, and generative AI. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  I aim to improve our understanding of how LLMs work, and how they can be made more interpretable and reliable.
+                  <!-- Some papers are <span class="highlight">highlighted</span>. -->
                 </p>
               </td>
             </tr>
@@ -58,44 +60,42 @@
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
-          <source src="images/nuvo.mp4" type="video/mp4">
+          <div class="two" id='diffusion_lens'><video  width=100% muted autoplay loop>
+            <img src="images/diffusionLens.gif" alt="Animated GIF">
           Your browser does not support the video tag.
           </video></div>
           <img src='images/nuvo.jpg' width=100%>
         </div>
         <script type="text/javascript">
           function nuvo_start() {
-            document.getElementById('nuvo_image').style.opacity = "1";
+            document.getElementById('diffusion_lens').style.opacity = "1";
           }
 
           function nuvo_stop() {
-            document.getElementById('nuvo_image').style.opacity = "0";
+            document.getElementById('diffusion_lens').style.opacity = "0";
           }
           nuvo_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://pratulsrinivasan.github.io/nuvo/">
-          <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+        <a href="https://tokeron.github.io/DiffusionLensWeb/">
+          <span class="papertitle">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines</span>
         </a>
         <br>
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <a href="https://tokeron.github.io/"><strong>Michael Toker</strong></a>,
+        <a href="https://orgadhadas.github.io/">Hadas Orgad</a>,
+        <a href="https://venturamor.github.io/">Mor Ventura</a>,
         <br>
         <em>ECCV</em>, 2024
         <br>
-        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        <a href="https://tokeron.github.io/DiffusionLensWeb/">project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+        <a href="https://www.youtube.com/watch?v=hAZr8pjyt-Y&t=506s">video</a>
         /
-        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        <a href="https://arxiv.org/abs/2403.05846">arXiv</a>
         <p></p>
         <p>
-        Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
+          Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines.
         </p>
       </td>
     </tr>
