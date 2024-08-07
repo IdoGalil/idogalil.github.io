@@ -103,23 +103,86 @@
     </tr>
 
 
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='figureOut'><video  width=100% muted autoplay loop>
+          <source src="images/figureOut.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/figureOut.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('figureOut').style.opacity = "1";
+          }
 
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-                  <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-                <br>
-                <em>The Astronomical Journal</em>, 135, 2008
-                <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-                <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-              </td>
-            </tr>
+          function nuvo_stop() {
+            document.getElementById('figureOut').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://tokeron.github.io/metaphor/">
+          <span class="papertitle">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines</span>
+        </a>
+        <br>
+        <a href="https://tokeron.github.io/"><strong>Michael Toker</strong></a>,
+        <a href="https://csaws.cs.technion.ac.il/~omishali/">Oren Mishali</a>,
+        <a href="https://www.openu.ac.il/en/personalsites/ofirmanor.aspx">Ophir Münz-Manor</a>,
+        <a href="https://benny.cs.technion.ac.il/">Benny Kimelfeld</a>,
+        <a href="https://belinkov.com/">Yonatan Belinkov</a>,
+        <br>
+        <em>EACL</em>, 2024
+        <br>
+        <a href="https://tokeron.github.io/metaphor/">project page</a>
+        /
+        <!-- <a href="https://www.youtube.com/watch?v=hAZr8pjyt-Y&t=506s">video</a> -->
+        /
+        <a href="https://aclanthology.org/2024.eacl-short.39.pdf">Paper</a>
+        <br><br>
+        <button onclick="window.open('https://aclanthology.org/2024.eacl-short.39.pdf', '_blank')">Citations</button>
+        <p></p>
+        <p>
+          Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines.
+        </p>
+      </td>
+      
+      @inproceedings{toker2024dataset,
+        title={A Dataset for Metaphor Detection in Early Medieval Hebrew Poetry},
+        author={Toker, Michael and Mishali, Oren and M{\"u}nz-Manor, Ophir and Kimelfeld, Benny and Belinkov, Yonatan},
+        booktitle={Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 2: Short Papers)},
+        pages={443--453},
+        year={2024}
+      }
+
+      
+      <!-- <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://tokeron.github.io/metaphor/">
+          <span class="papertitle">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines</span>
+        </a>
+        <br>
+        <a href="https://tokeron.github.io/"><strong>Michael Toker</strong></a>,
+        <a href="https://csaws.cs.technion.ac.il/~omishali/">Oren Mishali</a>,
+        <a href="https://www.openu.ac.il/en/personalsites/ofirmanor.aspx">Ophir Münz-Manor</a>,
+        <a href="https://benny.cs.technion.ac.il/">Benny Kimelfeld</a>,
+        <a href="https://belinkov.com/">Yonatan Belinkov</a>,
+        <br>
+        <em>EACL</em>, 2024
+        <br>
+        <a href="https://tokeron.github.io/metaphor/">project page</a>
+        / -->
+        <!-- <a href="https://www.youtube.com/watch?v=hAZr8pjyt-Y&t=506s">video</a> -->
+        <!-- /
+        <a href="https://aclanthology.org/2024.eacl-short.39.pdf">Paper</a>
+        <p></p>
+        <p>
+          Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines.
+        </p>
+      </td> -->
+    </tr>
 
           </tbody></table>
 
