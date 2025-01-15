@@ -9,6 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- Minimal JS for "Read More" toggles -->
+    <script>
+      function toggleSummary(id) {
+        const summaryDiv = document.getElementById(id);
+        if (summaryDiv.style.display === "none") {
+          summaryDiv.style.display = "block";
+        } else {
+          summaryDiv.style.display = "none";
+        }
+      }
+    </script>
     
   </head>
 
@@ -27,13 +39,12 @@
                       Ido Galil
                     </p>
                     <p>
-                      I'm currently a Deep Learning Researcher at Nvidia and finishing my PhD under the supervision of Prof. Ran El-Yaniv at the 
+                      I am a Deep Learning Researcher at NVIDIA and a finishing PhD student under Prof. Ran El-Yaniv at the 
                       <a href="https://www.cs.technion.ac.il/">CS faculty</a>,
-                      <a href="https://www.technion.ac.il/en">Technion</a>.
-                      My research at Nvidia focuses on Neural Architecture Search (NAS) for large language models (LLMs) and generative AI models.
-                      My PhD at the Technion revolves around deep neural networks' reliability and safety in computer vision (CV) and natural language processing (NLP). 
-                      My thesis specifically focuses on understanding and enhancing models' uncertainty estimation performance (selective prediction, confidence calibration, and ranking) 
-                      and ensuring their robustness under distribution shifts and malicious adversarial attacks.
+                      <a href="https://www.technion.ac.il/en">Technion</a>. 
+                      My work at NVIDIA focuses on Neural Architecture Search (NAS) for large language models (LLMs) and generative AI. 
+                      In my PhD research, I study deep neural networks’ reliability and safety in computer vision and natural language processing, 
+                      with an emphasis on uncertainty estimation, selective prediction, and adversarial robustness.
                     </p>
                     <p style="text-align:center">
                       <a href="mailto:idogalil@campus.technion.ac.il">Email</a> &nbsp;/&nbsp;
@@ -44,7 +55,7 @@
                   </td>
                   <td style="padding:2.5%;width:40%;max-width:40%">
                     <a href="data/me_2024.jpeg">
-                      <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" 
+                      <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" 
                            alt="profile photo" 
                            src="data/me_2024.jpeg">
                     </a>
@@ -74,33 +85,34 @@
                     <img src="images/puzzle_overview.png" alt="Puzzle Overview" width="100%">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <span class="papertitle">Puzzle: Distillation-Based NAS for Inference-Optimized LLMs</span>
-                    <br>
-                    <strong>
+                    <p class="papertitle">
+                      Puzzle: Distillation-Based NAS for Inference-Optimized LLMs
+                    </p>
+                    <p>
                       Authors: Akhiad Bercovich, Tomer Ronen, Talor Abramovich, Nir Ailon, Nave Assaf, 
                       Mohammad Dabbah, Ido Galil, Amnon Geifman, Yonatan Geifman, Izhak Golan, 
                       Netanel Haber, Ehud Karpas, Roi Koren, Itay Levy, Pavlo Molchanov, Shahar Mor, 
                       Zach Moshe, Najeeb Nabwani, Omri Puny, Ran Rubin, Itamar Schen, Ido Shahaf, 
                       Oren Tropp, Omer Ullman Argov, Ran Zilberstein, Ran El-Yaniv
-                    </strong>
-                    <br>
-                    <em>
-                      <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;">
-                      ArXiv, 2024
-                    </em>
-                    <br><br>
-                    <p>
-                      <strong>TL;DR</strong>: Puzzle accelerates LLM inference on specific hardware while preserving capabilities. 
-                      Through a novel decomposed NAS approach, we optimize large models (tens of billions of parameters) under strict hardware constraints. 
-                      We achieve up to 2.17× speedup with minimal performance trade-off.
                     </p>
                     <p>
-                      <strong>Summary</strong>: Despite LLMs’ impressive results, they’re often bottlenecked by computational costs. 
-                      Puzzle addresses this by leveraging blockwise local knowledge distillation and mixed-integer programming for 
-                      hardware-specific model optimization. This approach maintains accuracy while significantly reducing inference overhead.
+                      <em>
+                        <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        ArXiv, 2024
+                      </em>
                     </p>
+                    <p><strong>TL;DR</strong>: Puzzle accelerates LLM inference on specific hardware by leveraging blockwise local knowledge distillation and mixed-integer programming to preserve model performance while significantly reducing inference costs.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('puzzle-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="puzzle-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Despite LLMs’ impressive results, they are often limited by computational costs during inference. 
+                        Puzzle addresses this by optimizing large-scale models for specific hardware without sacrificing accuracy, 
+                        resulting in up to 2.17× speedups.
+                      </p>
+                    </div>
                     <p>
                       <a href="https://arxiv.org/pdf/2411.19146" target="_blank">Paper</a>
+                      &nbsp;|&nbsp; (Code link if available)
                     </p>
                   </td>
                 </tr>
@@ -113,33 +125,30 @@
                          width="100%">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <span class="papertitle">Hierarchical Selective Classification</span>
-                    <br>
-                    <strong>
+                    <p class="papertitle">Hierarchical Selective Classification</p>
+                    <p>
                       Authors: Shani Goren* · Ido Galil* · Ran El-Yaniv 
                       &nbsp; (*Equal contribution)
-                    </strong>
-                    <br>
-                    <em>
-                      <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;">
-                      NeurIPS, 2024
-                      &nbsp;&nbsp;
-                      <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
-                    </em>
-                    <br><br>
-                    <p>
-                      <strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, 
-                      allowing models to reduce the specificity of predictions (e.g., “malignant tumor” instead of a precise subtype) when uncertain.
                     </p>
                     <p>
-                      <strong>Summary</strong>: Traditional selective classification only allows a full prediction or rejection. 
-                      Our Hierarchical Selective Classification (HSC) uses class hierarchies to offer partial yet valuable predictions 
-                      (e.g., at a higher-level node). We propose inference rules that adjust predictions based on uncertainty, 
-                      improving both selective performance and calibration.
+                      <em>
+                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        NeurIPS, 2024
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
+                      </em>
                     </p>
+                    <p><strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, allowing models to reduce the specificity of predictions when uncertain.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('hsc-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="hsc-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Traditional selective classification only allows a full prediction or refusal. 
+                        Our method uses class hierarchies to offer partial but valuable predictions (e.g., “malignant tumor” without specifying the subtype), improving calibration and risk-coverage trade-offs.
+                      </p>
+                    </div>
                     <p>
                       <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank">Video</a> &nbsp; 
+                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank">Video</a> / 
                       <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank">Code</a>
                     </p>
                   </td>
@@ -153,33 +162,33 @@
                          width="100%">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <span class="papertitle">
+                    <p class="papertitle">
                       A Framework for Benchmarking Class-out-of-distribution Detection and its Application to ImageNet
-                    </span>
-                    <br>
-                    <strong>Authors: Ido Galil · Mohammed Dabbah · Ran El-Yaniv</strong>
-                    <br>
-                    <em>
-                      <img src="images/iclr_logo.png" alt="ICLR" 
-                           style="height:30px;vertical-align:middle;margin-right:5px;"> 
-                      ICLR, 2023 (Top 25%)
-                      &nbsp;&nbsp;
-                      <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
-                    </em>
-                    <br><br>
-                    <p>
-                      <strong>TL;DR</strong>: Introduces a novel framework to benchmark class-OOD detection at multiple difficulty levels. 
-                      Applied to 500+ pretrained ImageNet-1k classifiers, revealing new insights on open-set recognition.
                     </p>
                     <p>
-                      <strong>Summary</strong>: Existing C-OOD benchmarks can be biased or too easy. 
-                      We propose a method for creating multi-level OOD benchmarks that are not biased towards any single model or detection technique. 
-                      We systematically evaluate 500+ classifiers, showing how training regimes (e.g., knowledge distillation, ViT variants) 
-                      impact OOD detection performance.
+                      Authors: <span>Ido Galil</span> · <span>Mohammed Dabbah*</span> · <span>Ran El-Yaniv</span>
+                      &nbsp; (*Equal contribution)
                     </p>
+                    <p>
+                      <em>
+                        <img src="images/iclr_logo.png" alt="ICLR" 
+                             style="height:30px;vertical-align:middle;margin-right:5px;"> 
+                        ICLR, 2023 (Top 25%)
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: Introduces a new approach to generate multi-level C-OOD benchmarks for ImageNet classifiers, applied to 500+ models to reveal novel insights in open-set recognition.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('cood-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="cood-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Existing OOD benchmarks can be too easy or biased toward a particular model. 
+                        Our framework systematically evaluates different detectors across multiple difficulty levels, uncovering how training regimes, architecture choices, and other factors influence performance.
+                      </p>
+                    </div>
                     <p>
                       <a href="https://openreview.net/pdf?id=Iuubb9W6Jtk" target="_blank">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=Q3XF06tcdDQ&t=1s" target="_blank">Video</a> &nbsp; 
+                      <a href="https://www.youtube.com/watch?v=Q3XF06tcdDQ&t=1s" target="_blank">Video</a> / 
                       <a href="https://github.com/mdabbah/COOD_benchmarking" target="_blank">Code</a>
                     </p>
                   </td>
@@ -193,32 +202,32 @@
                          width="100%">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <span class="papertitle">
+                    <p class="papertitle">
                       What Can We Learn From the Selective Prediction and Uncertainty Estimation Performance of 523 ImageNet Classifiers?
-                    </span>
-                    <br>
-                    <strong>Authors: Ido Galil · Mohammed Dabbah · Ran El-Yaniv</strong>
-                    <br>
-                    <em>
-                      <img src="images/iclr_logo.png" alt="ICLR" 
-                           style="height:30px;vertical-align:middle;margin-right:5px;"> 
-                      ICLR, 2023
-                      &nbsp;&nbsp;
-                      <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
-                    </em>
-                    <br><br>
-                    <p>
-                      <strong>TL;DR</strong>: Comprehensive analysis of 523 pretrained ImageNet models for selective prediction and uncertainty estimation. 
-                      Highlights training regimes (especially distillation) and architectures (ViT) that excel in calibration, ranking, and selective performance.
                     </p>
                     <p>
-                      <strong>Summary</strong>: We examine metrics like AUROC, ECE, selective risk, and SAC across hundreds of models. 
-                      Distillation often yields the best uncertainty estimation. A subset of ViTs consistently outperforms other architectures. 
-                      Post-training calibration (temperature scaling) proves more beneficial than expected in ranking and selective risk.
+                      Authors: Ido Galil · Mohammed Dabbah · Ran El-Yaniv
                     </p>
+                    <p>
+                      <em>
+                        <img src="images/iclr_logo.png" alt="ICLR" 
+                             style="height:30px;vertical-align:middle;margin-right:5px;"> 
+                        ICLR, 2023
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: Extensive study on selective prediction and uncertainty estimation across 523 ImageNet models, highlighting that distillation and certain training regimes yield superior calibration and ranking.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('imagenet523-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="imagenet523-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Metrics such as AUROC, ECE, selective risk, and SAC show that knowledge distillation significantly improves uncertainty estimation. 
+                        A subset of ViTs outperforms other architectures, and temperature scaling benefits both calibration and ranking performance more than previously realized.
+                      </p>
+                    </div>
                     <p>
                       <a href="https://openreview.net/pdf?id=p66AzKi6Xim" target="_blank">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=265cP8A80qY&t=1s" target="_blank">Video</a> &nbsp;
+                      <a href="https://www.youtube.com/watch?v=265cP8A80qY&t=1s" target="_blank">Video</a> / 
                       <a href="https://github.com/idogalil/benchmarking-uncertainty-estimation-performance" target="_blank">Code</a>
                     </p>
                   </td>
@@ -232,32 +241,34 @@
                          width="100%">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <span class="papertitle">
+                    <p class="papertitle">
                       Disrupting Deep Uncertainty Estimation Without Harming Accuracy
-                    </span>
-                    <br>
-                    <strong>Authors: Ido Galil · Ran El-Yaniv</strong>
-                    <br>
-                    <em>
-                      <img src="images/neurips_logo.png" alt="NeurIPS" 
-                           style="height:30px;vertical-align:middle;margin-right:5px;">
-                      NeurIPS, 2021
-                      &nbsp;&nbsp;
-                      <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
-                    </em>
-                    <br><br>
-                    <p>
-                      <strong>TL;DR</strong>: Introduces ACE (Attack on Confidence Estimation), which disrupts a neural network’s uncertainty estimates 
-                      without harming its accuracy, rendering standard selective prediction mechanisms unreliable.
                     </p>
                     <p>
-                      <strong>Summary</strong>: Traditional adversarial attacks target accuracy by pushing inputs across the decision boundary. 
-                      ACE selectively pushes correct instances closer to the boundary (reducing confidence) and incorrect instances farther from the boundary 
-                      (increasing confidence). This makes reliance on uncertainty estimates dangerous for risk-sensitive tasks (e.g., medical applications).
+                      Authors: Ido Galil · Ran El-Yaniv
                     </p>
+                    <p>
+                      <em>
+                        <img src="images/neurips_logo.png" alt="NeurIPS" 
+                             style="height:30px;vertical-align:middle;margin-right:5px;">
+                        NeurIPS, 2021
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" 
+                             style="height:30px;vertical-align:middle;margin-left:15px;">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: ACE (Attack on Confidence Estimation) disrupts a neural network’s uncertainty estimations without affecting its accuracy, making standard selective mechanisms unreliable.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('ace-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="ace-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Traditional adversarial attacks cross decision boundaries to harm accuracy. 
+                        ACE selectively increases or decreases confidence for correct/incorrect predictions without crossing boundaries, 
+                        rendering uncertainty estimates dangerous in sensitive scenarios.
+                      </p>
+                    </div>
                     <p>
                       <a href="https://papers.nips.cc/paper_files/paper/2021/file/b1b20d09041289e6c3fbb81850c5da54-Paper.pdf" target="_blank">Paper</a> / 
-                      <a href="https://slideslive.com/38968191/disrupting-deep-uncertainty-estimation-without-harming-accuracy" target="_blank">Video</a> &nbsp; 
+                      <a href="https://slideslive.com/38968191/disrupting-deep-uncertainty-estimation-without-harming-accuracy" target="_blank">Video</a> / 
                       <a href="https://github.com/IdoGalil/ACE" target="_blank">Code</a>
                     </p>
                   </td>
