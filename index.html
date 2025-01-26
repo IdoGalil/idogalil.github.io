@@ -89,6 +89,35 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
+                <!-- New Paper (NAACL 2025) -->
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/flux_pad.jpeg" alt="Padding Tone" width="100%">
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <p class="papertitle">Padding Tone: A Mechanistic Analysis of Padding Tokens in T2I Models</p>
+                    <p>
+                      Authors: Michael Toker · Ido Galil · Hadas Orgad · Rinon Gal · Yoad Tewel · Gal Chechik · Yonatan Belinkov
+                    </p>
+                    <p>
+                      <em>
+                        <img src="images/acl.png" alt="NAACL" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        NAACL, 2025
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: Our work reveals how text-to-image (T2I) diffusion models use “empty” padding tokens, which can still influence generated images depending on model architecture and training.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('paddingtone-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="paddingtone-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        In T2I pipelines, prompts are padded to a fixed length with a special pad token—normally ignored by language models. However, we find T2I models may treat them differently. We develop two causal intervention methods in the text encoder and the diffusion process to test whether these tokens carry semantic information. Experiments on six T2I models reveal scenarios where padding tokens are ignored, or become semantically significant, or even serve as “registers” that store and recall data during diffusion. Our findings underscore the need for more precise handling of padding tokens in T2I model design.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="https://arxiv.org/pdf/2501.06751" target="_blank">Paper</a>
+                    </p>
+                  </td>
+                </tr>
+
                 <!-- Puzzle (ArXiv 2024, NVIDIA) -->
                 <tr>
                   <td style="padding:20px;width:25%;vertical-align:middle">
