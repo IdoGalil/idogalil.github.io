@@ -50,24 +50,25 @@
                       Ido Galil
                     </p>
                     <p>
-                      I am a Deep Learning Researcher in the Deci group at NVIDIA (formerly Deci AI, acquired by NVIDIA) and a finishing PhD student under Prof. Ran El-Yaniv at the 
-                      <a href="https://www.cs.technion.ac.il/">CS faculty</a>,
-                      <a href="https://www.technion.ac.il/en">Technion</a>. 
-                      My work focuses on Neural Architecture Search (NAS) for large language models (LLMs) and generative AI. 
-                      In my PhD research, I study deep neural networks’ reliability and safety in computer vision and natural language processing, 
+                      I am a Deep Learning Researcher in the Deci group at NVIDIA (formerly Deci AI, acquired by NVIDIA).
+                      My work focuses on improving the inference efficiency of large language models (LLMs) and generative AI, such as leveraging Neural Architecture Search (NAS) to optimize architectures for inference.
+                      I graduated my PhD under Prof. Ran El-Yaniv at the 
+                      <a href="https://www.cs.technion.ac.il/" target="_blank" rel="noopener noreferrer">CS faculty</a>,
+                      <a href="https://www.technion.ac.il/en" target="_blank" rel="noopener noreferrer">Technion</a>.
+                      In my PhD research, I studied deep neural networks’ reliability and safety in computer vision and natural language processing, 
                       with an emphasis on uncertainty estimation, selective prediction, and adversarial robustness.
                     </p>
                     <p style="text-align:center">
                       <a href="mailto:idogalil@campus.technion.ac.il">Email</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=eZA2cu8AAAAJ&hl">Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://linkedin.com/in/ido-galil">Linkedin</a>
+                      <a href="https://scholar.google.com/citations?user=eZA2cu8AAAAJ&hl" target="_blank" rel="noopener noreferrer">Scholar</a> &nbsp;/&nbsp;
+                      <a href="https://linkedin.com/in/ido-galil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </p>
                   </td>
                   <td style="padding:2.5%;width:40%;max-width:40%">
                     <a href="data/me_2024.jpeg">
                       <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" 
                            alt="profile photo" 
-                           src="data/me_2024.jpeg">
+                           src="data/me_2024.jpeg" loading="lazy">
                     </a>
                   </td>
                 </tr>
@@ -89,10 +90,41 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
+                <!-- FFN Fusion (NeurIPS 2025 Spotlight) -->
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/neurips_logo.png" alt="NeurIPS" width="100%" loading="lazy">
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <p class="papertitle">FFN Fusion: Rethinking Sequential Computation in Large Language Models</p>
+                    <p>
+                      Authors: Akhiad Bercovich · Mohammad Dabbah · Omri Puny · Ido Galil · Amnon Geifman · Yonatan Geifman · Izhak Golan · Ehud Karpas · Itay Levy · Zach Moshe · Najeeb Nabwani · Tomer Ronen · Itamar Schen · Elad Segal · Ido Shahaf · Oren Tropp · Ran Zilberstein · Ran El-Yaniv
+                    </p>
+                    <p>
+                      <em>
+                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                        NeurIPS, 2025 (Spotlight)
+                        &nbsp;&nbsp;
+                        <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: FFN Fusion reduces sequential computation in LLMs by fusing and parallelizing FFN computations, yielding substantial inference speedups with minimal accuracy impact at scale.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('ffnfusion-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="ffnfusion-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        We run Puzzle to search hardware‑aware designs, then fuse consecutive FFNs into larger FFNs, decreasing the model's depth. Across models from tens to hundreds of billions of parameters, FFN Fusion reduces latency and cost while preserving quality, and complements techniques such as quantization and pruning.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="https://arxiv.org/pdf/2503.18908v1" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </p>
+                  </td>
+                </tr>
+
                 <!-- New Paper (NAACL 2025) -->
                 <tr>
                   <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/flux_pad.jpeg" alt="Padding Tone" width="100%">
+                    <img src="images/flux_pad.jpeg" alt="Padding Tone" width="100%" loading="lazy">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <p class="papertitle">Padding Tone: A Mechanistic Analysis of Padding Tokens in T2I Models</p>
@@ -101,11 +133,11 @@
                     </p>
                     <p>
                       <em>
-                        <img src="images/acl.png" alt="NAACL" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        <img src="images/acl.png" alt="NAACL" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
                         NAACL, 2025 (Oral)
                         &nbsp;&nbsp;
-                        <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;">
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
                       </em>
                     </p>
                     <p><strong>TL;DR</strong>: Our work reveals how text-to-image (T2I) diffusion models use “empty” padding tokens, which can still influence generated images depending on model architecture and training.</p>
@@ -116,7 +148,36 @@
                       </p>
                     </div>
                     <p>
-                      <a href="https://arxiv.org/pdf/2501.06751" target="_blank">Paper</a>
+                      <a href="https://arxiv.org/pdf/2501.06751" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </p>
+                  </td>
+                </tr>
+
+                <!-- Synthetic Cells (Advanced Biology - Cover) -->
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/Advanced_Logo.jpg" alt="Advanced Biology" width="100%" loading="lazy">
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <p class="papertitle">Scaling Up Synthetic Cell Production Using Robotics and Machine Learning Toward Therapeutic Applications</p>
+                    <p>
+                      Authors: Shanny Ackerman · Ido Galil
+                    </p>
+                    <p>
+                      <em>
+                        <img src="images/Advanced_Logo.jpg" alt="Advanced Biology" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                        Advanced Biology (Journal Cover)
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: An automated robotics-and-ML pipeline scales synthetic cell production with robust quality control; deep neural networks support quality assessment and assurance toward therapeutic-grade manufacturing.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('advbio-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="advbio-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        We couple robotics with machine learning to optimize and monitor synthetic cell production. We use deep neural networks to assess the synthetic cells' quality.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adbi.202400671" target="_blank" rel="noopener noreferrer">Paper</a>
                     </p>
                   </td>
                 </tr>
@@ -124,7 +185,7 @@
                 <!-- Puzzle (ArXiv 2024, NVIDIA) -->
                 <tr>
                   <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/puzzle_overview.png" alt="Puzzle Overview" width="100%">
+                    <img src="images/puzzle_overview.png" alt="Puzzle Overview" width="100%" loading="lazy">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <p class="papertitle">
@@ -139,9 +200,10 @@
                     </p>
                     <p>
                       <em>
-                        ArXiv, 2024
+                        <img src="images/ICML-logo.svg" alt="ICML" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                        ICML, 2025
                         &nbsp;&nbsp;
-                        <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        <img src="images/nvidia_logo.jpg" alt="NVIDIA" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
                       </em>
                     </p>
                     <p><strong>TL;DR</strong>: Puzzle accelerates LLM inference on specific hardware by leveraging blockwise local knowledge distillation and mixed-integer programming to preserve model performance while significantly reducing inference costs.</p>
@@ -154,7 +216,7 @@
                       </p>
                     </div>
                     <p>
-                      <a href="https://arxiv.org/pdf/2411.19146" target="_blank">Paper</a>
+                      <a href="https://openreview.net/pdf?id=RY5MMBHRqo" target="_blank" rel="noopener noreferrer">Paper</a>
                     </p>
                   </td>
                 </tr>
@@ -164,7 +226,7 @@
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <img src="images/hierarchical_selective_prediction.png" 
                          alt="Hierarchical Selective Classification" 
-                         width="100%">
+                         width="100%" loading="lazy">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <p class="papertitle">Hierarchical Selective Classification</p>
@@ -174,10 +236,10 @@
                     </p>
                     <p>
                       <em>
-                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;">
+                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
                         NeurIPS, 2024
                         &nbsp;&nbsp;
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
                       </em>
                     </p>
                     <p><strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, allowing models to reduce the specificity of predictions when uncertain.</p>
@@ -189,9 +251,9 @@
                       </p>
                     </div>
                     <p>
-                      <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank">Video</a> / 
-                      <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank">Code</a>
+                      <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank" rel="noopener noreferrer">Paper</a> / 
+                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank" rel="noopener noreferrer">Video</a> / 
+                      <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank" rel="noopener noreferrer">Code</a>
                     </p>
                   </td>
                 </tr>
@@ -201,7 +263,7 @@
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <img src="images/degredation_graph_paper.png" 
                          alt="Degradation Graph" 
-                         width="100%">
+                         width="100%" loading="lazy">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <p class="papertitle">
@@ -214,10 +276,10 @@
                     <p>
                       <em>
                         <img src="images/iclr_logo.png" alt="ICLR" 
-                             style="height:30px;vertical-align:middle;margin-right:5px;"> 
+                             style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy"> 
                         ICLR, 2023 (Top 25%)
                         &nbsp;&nbsp;
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
                       </em>
                     </p>
                     <p><strong>TL;DR</strong>: Introduces a new approach to generate multi-level C-OOD benchmarks for ImageNet classifiers, applied to 500+ models to reveal novel insights in open-set recognition.</p>
@@ -229,9 +291,9 @@
                       </p>
                     </div>
                     <p>
-                      <a href="https://openreview.net/pdf?id=Iuubb9W6Jtk" target="_blank">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=Q3XF06tcdDQ&t=1s" target="_blank">Video</a> / 
-                      <a href="https://github.com/mdabbah/COOD_benchmarking" target="_blank">Code</a>
+                      <a href="https://openreview.net/pdf?id=Iuubb9W6Jtk" target="_blank" rel="noopener noreferrer">Paper</a> / 
+                      <a href="https://www.youtube.com/watch?v=Q3XF06tcdDQ&t=1s" target="_blank" rel="noopener noreferrer">Video</a> / 
+                      <a href="https://github.com/mdabbah/COOD_benchmarking" target="_blank" rel="noopener noreferrer">Code</a>
                     </p>
                   </td>
                 </tr>
@@ -241,7 +303,7 @@
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <img src="images/Risk-Coverage_curve comparisonv3.png" 
                          alt="Risk Coverage Curve" 
-                         width="100%">
+                         width="100%" loading="lazy">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <p class="papertitle">
@@ -253,10 +315,10 @@
                     <p>
                       <em>
                         <img src="images/iclr_logo.png" alt="ICLR" 
-                             style="height:30px;vertical-align:middle;margin-right:5px;"> 
+                             style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy"> 
                         ICLR, 2023
                         &nbsp;&nbsp;
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;">
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
                       </em>
                     </p>
                     <p><strong>TL;DR</strong>: Extensive study on selective prediction and uncertainty estimation across 523 ImageNet models, highlighting that distillation and certain training regimes yield superior calibration and ranking.</p>
@@ -268,9 +330,9 @@
                       </p>
                     </div>
                     <p>
-                      <a href="https://openreview.net/pdf?id=p66AzKi6Xim" target="_blank">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=265cP8A80qY&t=1s" target="_blank">Video</a> / 
-                      <a href="https://github.com/idogalil/benchmarking-uncertainty-estimation-performance" target="_blank">Code</a>
+                      <a href="https://openreview.net/pdf?id=p66AzKi6Xim" target="_blank" rel="noopener noreferrer">Paper</a> / 
+                      <a href="https://www.youtube.com/watch?v=265cP8A80qY&t=1s" target="_blank" rel="noopener noreferrer">Video</a> / 
+                      <a href="https://github.com/idogalil/benchmarking-uncertainty-estimation-performance" target="_blank" rel="noopener noreferrer">Code</a>
                     </p>
                   </td>
                 </tr>
@@ -280,7 +342,7 @@
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <img src="images/ACE_Intuition.png" 
                          alt="Disrupting Deep Uncertainty Estimation" 
-                         width="100%">
+                         width="100%" loading="lazy">
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <p class="papertitle">
@@ -292,11 +354,11 @@
                     <p>
                       <em>
                         <img src="images/neurips_logo.png" alt="NeurIPS" 
-                             style="height:30px;vertical-align:middle;margin-right:5px;">
+                             style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
                         NeurIPS, 2021
                         &nbsp;&nbsp;
                         <img src="images/technion_logo.png" alt="Technion" 
-                             style="height:30px;vertical-align:middle;margin-left:15px;">
+                             style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
                       </em>
                     </p>
                     <p><strong>TL;DR</strong>: ACE (Attack on Confidence Estimation) disrupts a neural network’s uncertainty estimations without affecting its accuracy, making standard selective mechanisms unreliable.</p>
@@ -309,9 +371,9 @@
                       </p>
                     </div>
                     <p>
-                      <a href="https://papers.nips.cc/paper_files/paper/2021/file/b1b20d09041289e6c3fbb81850c5da54-Paper.pdf" target="_blank">Paper</a> / 
-                      <a href="https://slideslive.com/38968191/disrupting-deep-uncertainty-estimation-without-harming-accuracy" target="_blank">Video</a> / 
-                      <a href="https://github.com/IdoGalil/ACE" target="_blank">Code</a>
+                      <a href="https://papers.nips.cc/paper_files/paper/2021/file/b1b20d09041289e6c3fbb81850c5da54-Paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a> / 
+                      <a href="https://slideslive.com/38968191/disrupting-deep-uncertainty-estimation-without-harming-accuracy" target="_blank" rel="noopener noreferrer">Video</a> / 
+                      <a href="https://github.com/IdoGalil/ACE" target="_blank" rel="noopener noreferrer">Code</a>
                     </p>
                   </td>
                 </tr>
@@ -336,7 +398,7 @@
                     <p>
                       I was interviewed (in Hebrew) about my PhD research and teaching experience. 
                       You can listen to the interview on 
-                      <a href="https://open.spotify.com/episode/4Xjnx09wRanVGp3781VPdR" target="_blank">Spotify</a>.
+                      <a href="https://open.spotify.com/episode/4Xjnx09wRanVGp3781VPdR" target="_blank" rel="noopener noreferrer">Spotify</a>.
                     </p>
                   </td>
                 </tr>
@@ -360,7 +422,7 @@
                     <p>
                       I served as a TA for the “Data Structures” course at the Technion for 3.5 years. 
                       All my tutorials and other helpful materials (in Hebrew) are available on my 
-                      <a href="https://www.youtube.com/@idogalil" target="_blank">YouTube channel</a>.
+                      <a href="https://www.youtube.com/@idogalil" target="_blank" rel="noopener noreferrer">YouTube channel</a>.
                     </p>
                   </td>
                 </tr>
