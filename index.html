@@ -121,43 +121,6 @@
                   </td>
                 </tr>
 
-                
-                <!-- Hierarchical Selective Classification (NeurIPS 2024, Technion) -->
-                <tr>
-                  <td style="padding:20px;width:30%;vertical-align:middle">
-                    <img src="images/hierarchical_selective_prediction.png" 
-                         alt="Hierarchical Selective Classification" 
-                         width="100%" loading="lazy">
-                  </td>
-                  <td style="padding:20px;width:70%;vertical-align:middle">
-                    <p class="papertitle">Hierarchical Selective Classification</p>
-                    <p>
-                      Authors: Shani Goren* · Ido Galil* · Ran El-Yaniv 
-                      &nbsp; (*Equal contribution)
-                    </p>
-                    <p>
-                      <em>
-                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
-                        NeurIPS, 2024
-                        &nbsp;&nbsp;
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
-                      </em>
-                    </p>
-                    <p><strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, allowing models to reduce the specificity of predictions when uncertain.</p>
-                    <a href="javascript:void(0);" onclick="toggleSummary('hsc-summary')" style="color:blue;text-decoration:underline;">Read More</a>
-                    <div id="hsc-summary" style="display:none;margin-top:10px;">
-                      <p>
-                        Traditional selective classification only allows a full prediction or refusal. 
-                        Our method uses class hierarchies to offer partial but valuable predictions (e.g., “malignant tumor” without specifying the subtype), improving calibration and risk-coverage trade-offs.
-                      </p>
-                    </div>
-                    <p>
-                      <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank" rel="noopener noreferrer">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank" rel="noopener noreferrer">Video</a> / 
-                      <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank" rel="noopener noreferrer">Code</a>
-                    </p>
-                  </td>
-                </tr>
                 <!-- New Paper (NAACL 2025) -->
                 <tr>
                   <td style="padding:20px;width:30%;vertical-align:middle">
@@ -193,7 +156,7 @@
                 <!-- Synthetic Cells (Advanced Biology - Cover) -->
                 <tr>
                   <td style="padding:20px;width:30%;vertical-align:middle">
-                    <img src="images/synthetic_cell.png" alt="Synthetic Cells" width="100%" loading="lazy">
+                    <img src="images/synthetic_cell.png" alt="Synthetic Cells" width="80%" style="display:block;margin:0 auto;" loading="lazy">
                   </td>
                   <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">Scaling Up Synthetic Cell Production Using Robotics and Machine Learning Toward Therapeutic Applications</p>
@@ -301,6 +264,73 @@
                   </td>
                 </tr>
 
+                <!-- No Data, No Optimization (Technion, 2025) -->
+                <tr>
+                  <td style="padding:20px;width:30%;vertical-align:middle">
+                    <img src="images/dalmat.png" alt="No Data, No Optimization (thumbnail)" width="100%" loading="lazy">
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle">
+                    <p class="papertitle">No Data, No Optimization: A Lightweight Method To Disrupt Neural Networks With Sign-Flips</p>
+                    <p>
+                      Authors: Ido Galil* · Moshe Kimhi* · Ran El-Yaniv
+                      &nbsp; (*Equal contribution)
+                    </p>
+                    <p>
+                      <em>
+                        2025
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: We present a data-free, optimization-free attack that disrupts neural networks by flipping a tiny number of sign bits in their parameters. Flipping just two sign bits in ResNet-50 on ImageNet causes a 99.8% accuracy drop; a single-pass variant further amplifies damage.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('dnl-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="dnl-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Deep Neural Lesion (DNL) locates highly sensitive sign bits that control model behavior and flips them without any data or optimization. We validate effectiveness across diverse CV architectures and datasets, and show that a one-pass variant intensifies disruption beyond the zero-pass setting. Finally, hardening a small subset of vulnerable sign bits mitigates parameter attacks.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="https://arxiv.org/abs/2502.07408" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </p>
+                  </td>
+                </tr>
+
+                <!-- Hierarchical Selective Classification (NeurIPS 2024, Technion) -->
+                <tr>
+                  <td style="padding:20px;width:30%;vertical-align:middle">
+                    <img src="images/hierarchical_selective_prediction.png" 
+                         alt="Hierarchical Selective Classification" 
+                         width="100%" loading="lazy">
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle">
+                    <p class="papertitle">Hierarchical Selective Classification</p>
+                    <p>
+                      Authors: Shani Goren* · Ido Galil* · Ran El-Yaniv 
+                      &nbsp; (*Equal contribution)
+                    </p>
+                    <p>
+                      <em>
+                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                        NeurIPS, 2024
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, allowing models to reduce the specificity of predictions when uncertain.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('hsc-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="hsc-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Traditional selective classification only allows a full prediction or refusal. 
+                        Our method uses class hierarchies to offer partial but valuable predictions (e.g., “malignant tumor” without specifying the subtype), improving calibration and risk-coverage trade-offs.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank" rel="noopener noreferrer">Paper</a> / 
+                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank" rel="noopener noreferrer">Video</a> / 
+                      <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank" rel="noopener noreferrer">Code</a>
+                    </p>
+                  </td>
+                </tr>
                 <!-- C-OOD Benchmarking (ICLR 2023, Technion) -->
                 <tr>
                   <td style="padding:20px;width:30%;vertical-align:middle">
