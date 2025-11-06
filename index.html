@@ -92,10 +92,10 @@
 
                 <!-- FFN Fusion (NeurIPS 2025 Spotlight) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/ffn_fusion.jpg" alt="FFN Fusion" width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">FFN Fusion: Rethinking Sequential Computation in Large Language Models</p>
                     <p>
                       Authors: Akhiad Bercovich · Mohammad Dabbah · Omri Puny · Ido Galil · Amnon Geifman · Yonatan Geifman · Izhak Golan · Ehud Karpas · Itay Levy · Zach Moshe · Najeeb Nabwani · Tomer Ronen · Itamar Schen · Elad Segal · Ido Shahaf · Oren Tropp · Ran Zilberstein · Ran El-Yaniv
@@ -121,12 +121,49 @@
                   </td>
                 </tr>
 
+                
+                <!-- Hierarchical Selective Classification (NeurIPS 2024, Technion) -->
+                <tr>
+                  <td style="padding:20px;width:30%;vertical-align:middle">
+                    <img src="images/hierarchical_selective_prediction.png" 
+                         alt="Hierarchical Selective Classification" 
+                         width="100%" loading="lazy">
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle">
+                    <p class="papertitle">Hierarchical Selective Classification</p>
+                    <p>
+                      Authors: Shani Goren* · Ido Galil* · Ran El-Yaniv 
+                      &nbsp; (*Equal contribution)
+                    </p>
+                    <p>
+                      <em>
+                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
+                        NeurIPS, 2024
+                        &nbsp;&nbsp;
+                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
+                      </em>
+                    </p>
+                    <p><strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, allowing models to reduce the specificity of predictions when uncertain.</p>
+                    <a href="javascript:void(0);" onclick="toggleSummary('hsc-summary')" style="color:blue;text-decoration:underline;">Read More</a>
+                    <div id="hsc-summary" style="display:none;margin-top:10px;">
+                      <p>
+                        Traditional selective classification only allows a full prediction or refusal. 
+                        Our method uses class hierarchies to offer partial but valuable predictions (e.g., “malignant tumor” without specifying the subtype), improving calibration and risk-coverage trade-offs.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank" rel="noopener noreferrer">Paper</a> / 
+                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank" rel="noopener noreferrer">Video</a> / 
+                      <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank" rel="noopener noreferrer">Code</a>
+                    </p>
+                  </td>
+                </tr>
                 <!-- New Paper (NAACL 2025) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/flux_pad.jpeg" alt="Padding Tone" width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">Padding Tone: A Mechanistic Analysis of Padding Tokens in T2I Models</p>
                     <p>
                       Authors: Michael Toker · Ido Galil · Hadas Orgad · Rinon Gal · Yoad Tewel · Gal Chechik · Yonatan Belinkov
@@ -155,10 +192,10 @@
 
                 <!-- Synthetic Cells (Advanced Biology - Cover) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/synthetic_cell.png" alt="Synthetic Cells" width="80%" style="display:block;margin:0 auto;" loading="lazy">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
+                    <img src="images/synthetic_cell.png" alt="Synthetic Cells" width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">Scaling Up Synthetic Cell Production Using Robotics and Machine Learning Toward Therapeutic Applications</p>
                     <p>
                       Authors: Noga Sharf-Pauker · Ido Galil · Omer Kfir · Gal Chen · Rotem Menachem · Jeny Shklover · Avi Schroeder · Shanny Ackerman
@@ -184,10 +221,10 @@
 
                 <!-- Puzzle (ArXiv 2024, NVIDIA) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/puzzle_overview.png" alt="Puzzle Overview" width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">
                       Puzzle: Distillation-Based NAS for Inference-Optimized LLMs
                     </p>
@@ -225,79 +262,14 @@
 
                 
 
-                <!-- Hierarchical Selective Classification (NeurIPS 2024, Technion) -->
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/hierarchical_selective_prediction.png" 
-                         alt="Hierarchical Selective Classification" 
-                         width="100%" loading="lazy">
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <p class="papertitle">Hierarchical Selective Classification</p>
-                    <p>
-                      Authors: Shani Goren* · Ido Galil* · Ran El-Yaniv 
-                      &nbsp; (*Equal contribution)
-                    </p>
-                    <p>
-                      <em>
-                        <img src="images/neurips_logo.png" alt="NeurIPS" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
-                        NeurIPS, 2024
-                        &nbsp;&nbsp;
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-left:15px;" loading="lazy">
-                      </em>
-                    </p>
-                    <p><strong>TL;DR</strong>: We extend selective classification to a hierarchical setting, allowing models to reduce the specificity of predictions when uncertain.</p>
-                    <a href="javascript:void(0);" onclick="toggleSummary('hsc-summary')" style="color:blue;text-decoration:underline;">Read More</a>
-                    <div id="hsc-summary" style="display:none;margin-top:10px;">
-                      <p>
-                        Traditional selective classification only allows a full prediction or refusal. 
-                        Our method uses class hierarchies to offer partial but valuable predictions (e.g., “malignant tumor” without specifying the subtype), improving calibration and risk-coverage trade-offs.
-                      </p>
-                    </div>
-                    <p>
-                      <a href="https://openreview.net/pdf?id=wzof7Y66xs" target="_blank" rel="noopener noreferrer">Paper</a> / 
-                      <a href="https://www.youtube.com/watch?v=59CUrqKWxnw" target="_blank" rel="noopener noreferrer">Video</a> / 
-                      <a href="https://github.com/shanigoren/Hierarchical-Selective-Classification" target="_blank" rel="noopener noreferrer">Code</a>
-                    </p>
-                  </td>
-                </tr>
-
-                <!-- No Data, No Optimization (Technion, 2025) -->
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/dalmat.png" alt="No Data, No Optimization (thumbnail)" width="100%" loading="lazy">
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <p class="papertitle">No Data, No Optimization: A Lightweight Method To Disrupt Neural Networks With Sign-Flips</p>
-                    <p>
-                      Authors: Ido Galil* · Moshe Kimhi* · Ran El-Yaniv
-                      &nbsp; (*Equal contribution)
-                    </p>
-                    <p>
-                      <em>
-                        <img src="images/technion_logo.png" alt="Technion" style="height:30px;vertical-align:middle;margin-right:5px;" loading="lazy">
-                        Technion, 2025
-                      </em>
-                    </p>
-                    <p><strong>TL;DR</strong>: We present a data-free, optimization-free attack that disrupts neural networks by flipping a tiny number of sign bits in their parameters. Flipping just two sign bits in ResNet-50 on ImageNet causes a 99.8% accuracy drop; a single-pass variant further amplifies damage.</p>
-                    <a href="javascript:void(0);" onclick="toggleSummary('dnl-summary')" style="color:blue;text-decoration:underline;">Read More</a>
-                    <div id="dnl-summary" style="display:none;margin-top:10px;">
-                      <p>
-                        Deep Neural Lesion (DNL) locates highly sensitive sign bits that control model behavior and flips them without any data or optimization. We validate effectiveness across diverse CV architectures and datasets, and show that a one-pass variant intensifies disruption beyond the zero-pass setting. Finally, hardening a small subset of vulnerable sign bits mitigates parameter attacks.
-                      </p>
-                    </div>
-                    <p>
-                      <a href="https://arxiv.org/abs/2502.07408" target="_blank" rel="noopener noreferrer">Paper</a>
-                    </p>
-                  </td>
-                </tr>
+                
 
                 <!-- Llama-Nemotron: Efficient Reasoning Models (ICML 2025 - EXAIT Workshop) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/llama_nemotron.jpg" alt="Llama-Nemotron" width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">Llama-Nemotron: Efficient Reasoning Models</p>
                     <p>
                       Authors: Akhiad Bercovich · Itay Levy · Izik Golan · Mohammad Dabbah · Ran El-Yaniv · Omri Puny · Ido Galil · Zach Moshe · Tomer Ronen · Najeeb Nabwani · Ido Shahaf · Oren Tropp · Ehud Karpas · Ran Zilberstein · Jiaqi Zeng · Soumye Singhal · Alexander Bukharin · Yian Zhang · Tugrul Konuk · Gerald Shen · Ameya Sunil Mahabaleshwarkar · Bilal Kartal · Yoshi Suhara · Olivier Delalleau · Zijia Chen · Zhilin Wang · David Mosallanezhad · Adi Renduchintala · Haifeng Qian · Dima Rekesh
@@ -331,12 +303,12 @@
 
                 <!-- C-OOD Benchmarking (ICLR 2023, Technion) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/degredation_graph_paper.png" 
                          alt="Degradation Graph" 
                          width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">
                       A Framework for Benchmarking Class-out-of-distribution Detection and its Application to ImageNet
                     </p>
@@ -371,12 +343,12 @@
 
                 <!-- 523 ImageNet Classifiers (ICLR 2023, Technion) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/Risk-Coverage_curve comparisonv3.png" 
                          alt="Risk Coverage Curve" 
                          width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">
                       What Can We Learn From the Selective Prediction and Uncertainty Estimation Performance of 523 ImageNet Classifiers?
                     </p>
@@ -410,12 +382,12 @@
 
                 <!-- Disrupting Deep Uncertainty (NeurIPS 2021, Technion) -->
                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:20px;width:30%;vertical-align:middle">
                     <img src="images/ACE_Intuition.png" 
                          alt="Disrupting Deep Uncertainty Estimation" 
                          width="100%" loading="lazy">
                   </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
+                  <td style="padding:20px;width:70%;vertical-align:middle">
                     <p class="papertitle">
                       Disrupting Deep Uncertainty Estimation Without Harming Accuracy
                     </p>
